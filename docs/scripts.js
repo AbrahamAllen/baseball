@@ -1037,7 +1037,7 @@ class Scoreboard{
 	}
 	
 	build(){
-		this.dom = new DOM(document.body, 'scoreboard');
+		this.dom = new DOM(document.body, 'Scoreboard');
 		new DOM(this.dom.dom, 'outs');
 		new DOM(this.dom.dom, 'strikes');
 		new DOM(this.dom.dom, 'balls');
