@@ -1037,7 +1037,7 @@ class Scoreboard{
 	}
 	
 	build(){
-		this.dom = new DOM(document.body, 'Scoreboard');
+		this.dom = new DOM(document.body, 'scoreboard');
 		new DOM(this.dom.dom, 'outs');
 		new DOM(this.dom.dom, 'strikes');
 		new DOM(this.dom.dom, 'balls');
@@ -1075,7 +1075,7 @@ class Scoreboard{
 	
 	set(){
 	try{	
-		let dom = document.getElementById('Scoreboard');
+		let dom = document.getElementById('scoreboard');
 		dom.style.left = pageXOffset+window.innerWidth-400+'px';
 		dom.style.top = pageYOffset+'px';
 	}catch{}}
