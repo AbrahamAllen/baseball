@@ -1,0 +1,465 @@
+/* general elements and backgrounds */
+
+body{
+	background-size: cover;
+	background-repeat: auto;
+	margin: 0px;
+	overflow: hidden;
+}
+
+#moundBG{
+	width: 95vw;
+	height: 95vh;
+}
+
+
+
+/* mound elements */
+
+.unit{
+	position: absolute;
+}
+
+#pitcher{
+	position: absolute;
+	width: 50px;
+	height: 100px;
+}
+
+#batter{
+	position: absolute;
+	width: 150px;
+	height: 300px;
+	background-repeat: no-repeat;
+}
+
+#pitchchargemeter{
+	position: absolute;
+	top: 250px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: red;
+}
+
+#batchargemeter{
+	position: absolute;
+	top: 720px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: red;
+}
+
+#Plate{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	background-color: white;
+	left: 690px;
+	top: 660px;
+}
+
+#Catcher{
+	position: absolute;
+	top: 700px;
+	height: 1px;
+	width: 1500px;
+}
+
+#bat{
+	position: absolute;
+	height: 30px;
+}
+
+#pitchedball{
+	position: absolute;
+	top: 100px;
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	border-radius: 50%;
+}
+
+@keyframes pitched{
+	0%{width: 15px; height: 15px}
+	20%{width: 18px; height: 18px}
+	40%{width: 21px; height: 21px}
+	60%{width: 24px; height: 24px}
+	80%{width: 27px; height: 27px}
+	100%{width: 30px; height: 30px}
+}
+
+
+
+
+/* field and runner elements */
+
+#field{
+	width: 2000px;
+	height: 2000px;
+	margin: 0px;
+	border: 0px;
+	background-size: cover;
+}
+
+.base{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: white;
+}
+
+#fielder{
+	width: 75px;
+	height: 75px;
+
+}
+
+#hitball{
+	position: absolute;
+	background-color: white;
+	border-radius: 50%;
+}
+
+#spot{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+}
+
+#tossedball{
+	position: absolute;
+	top: 100px;
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	border-radius: 50%;
+}
+
+.runner{
+	width: 50px;
+	height: 50px;
+}
+
+#leftfoula{
+	position: absolute;
+	left: 281px;
+    top: 1558px;
+	width: 300px;
+	height: 300px;
+	
+}
+
+#leftfoulb{
+	position: absolute;
+	left: 456px;
+    top: 1688px;
+	width: 300px;
+	height: 300px;
+	
+}
+
+#leftfoulc{
+	position: absolute;
+    left: 678px;
+    top: 1869px;
+	width: 300px;
+	height: 300px;
+	
+}
+
+#rightfoula{
+	position: absolute;
+	left: 1466px;
+    top: 1558px;
+	width: 300px;
+	height: 300px;
+	
+}
+
+#rightfoulb{
+	position: absolute;
+	left: 1284px;
+    top: 1688px;
+	width: 300px;
+	height: 300px;
+	
+}
+
+#rightfoulc{
+	position: absolute;
+    left: 1079px;
+    top: 1869px;
+	width: 300px;
+	height: 300px;
+	
+}
+
+
+/* runner tracker and minis elements */
+.minirunner{
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: red;
+	position: absolute;
+}
+
+#Tracker{
+	width: 250px;
+	height: 250px;
+}
+
+#firstInput{
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	position: absolute;
+	left: 225px;
+	top: 112px;
+}
+
+#secondInput{
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	position: absolute;
+	left: 112px;
+	top: 0px;
+}
+
+#thirdInput{
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	position: absolute;
+	left: 0px;
+	top: 112px;
+}
+
+#homeInput{
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	position: absolute;
+	left: 112px;
+	top: 225px;
+}
+
+#BATAgain{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	
+}
+
+#all{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+}
+
+
+
+
+/* scoreboard elements */
+
+#scoreboard{
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	transform-style: preserve-3d
+}
+
+.scoreboardItem{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	font-size: 30px;
+	background-size: cover;
+	
+}
+
+#strikes{
+	left: 123px;
+    top: 273px;
+
+}
+
+#balls{
+    left: 211px;
+    top: 273px;
+}	
+
+
+#outs{
+	left: 263px;
+    top: 267px;
+	height: 50px;
+	background-color: red;
+	transform: translateZ(-10px)
+}
+
+#homeruns{
+    left: 127px;
+    top: 97px;	
+}
+
+#awayruns{
+    left: 294px;
+    top: 97px;
+}
+
+#inning{
+    left: 127px;
+    top: 184px;	
+}
+
+#atbat{
+    left: 302px;
+    top: 184px;
+}
+
+#homepic{
+	left: 182px;
+    top: 97px;
+}
+
+#awaypic{
+    left: 239px;
+    top: 97px;	
+}
+
+
+
+
+/* menu button elements */
+
+#PlayButton{
+	width: 300px;
+	height: 100px;
+	position: absolute;
+	left: 35%;
+	top: 35%;
+}
+
+#PracticeButton{
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	left: 38%;
+	top: 50%;
+}
+
+#HelpButton{
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	left: 38%;
+	top: 65%;
+}
+
+#charSelect{
+	width: 700px;
+	height: 200px;
+	position: absolute;
+	left: 150px;
+	top: 50px;
+}
+
+#charHolder{
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	left: 300px;
+	top: 300px;
+	border-style: solid;
+}
+
+.fruitSelect{
+	float: left;
+	margin: 10px;
+	width: 100px;
+	height: 100px;
+	background-color: green;
+}
+
+#startGame{
+	position: absolute;
+	left: 900px;
+	top: 400px;
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+}
+
+#inningsChoice{
+	position: absolute;
+	left: 1000px;
+	top: 345px;
+	height: 40px;
+	width: 30px;
+	font-size: 30px;
+	border-style: none;
+}
+
+#chooseinnings{
+	position: absolute;
+	left: 1020px;
+	top: 340px;
+	width: 100px;
+	height: 50px;
+}
+
+#selectedFruit{
+	position: absolute;
+	width: 300px;
+	height: 120px;
+	top: 200px;
+	left: 900px;
+}
+
+#awaySelected{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+    top: 200px;
+    left: 1090px;
+}
+
+
+#homeSelected{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 200px;
+    left: 910px;
+}
+
+
+/* next inning elements */
+
+#nextInning{
+	position: absolute;
+	height: 400px;
+	width: 400px;
+}
+
+#battingNext{
+	position: absolute;
+	left: 550px;
+	top: 200px;
+	width: 300px;
+	height: 300px;
+	background-size: cover;
+}
+
+
+#popup{
+	position: fixed;
+	width: 300px;
+	height: 150px;
+	top: 30%;
+	left: 40%;
+}
